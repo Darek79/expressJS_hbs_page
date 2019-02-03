@@ -41,7 +41,7 @@ hbs.registerHelper("css", () => {
     return css
 });
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render("home.hbs", {
         pageTitle: "hello helo",
         date: new Date(),
